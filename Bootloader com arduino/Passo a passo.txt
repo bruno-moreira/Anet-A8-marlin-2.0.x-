@@ -1,0 +1,27 @@
+## Conecte os cabo e o capacitor nos locais indicado no pdf do Crosslink
+## Arduino ISP na IDE Arduino
+
+* Examples > ArduinoISP > ArduinoISP
+* Tools > Board > Arduino uno
+* Port > ("porta que o arduino está")
+* Programmer > USBtinyISP
+* Upload sketch
+
+##Configuração do arduino
+##Conector do lcd uma ponta será ligada na porta J3 e na outra ponta essa ligação
+                     =======
+* | MISO (PIN12) | SCK (PIN13)     | RESET (PIN10) | *
+* | VCC (5V)     | MOSI (PIN11) | GND           | *
+
+## O que está dentro dos parentese será conectado no arduino
+## Capacitor 25v 10yF (RESET) (GND)
+
+##Instalando o Bootloader na anet a8
+* Tools > Board > Anet A8 (Optiboot)
+* Port > ("porta que o arduino está")
+* Programmer > Arduino as ISP
+* Burn Bootloader
+#A impressora deve está desligada e o computador conectado ao arduino
+
+##Proximo passo é instalar o firmware Marlin 2.0.x na impressora 
+
